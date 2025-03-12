@@ -54,6 +54,7 @@
   border: solid;
   transition: 0.3s;
   border-width: 1px;
+  color:white;
 }
 
 .inpot{
@@ -96,6 +97,7 @@
   background-color: black;
   border: none;
   font-size: larger;
+  color:white;
 }
 
 .ona:hover{
