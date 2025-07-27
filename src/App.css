@@ -1,108 +1,225 @@
-.App {
-  text-align: center;
+/* src/App.css veya projenizin ana CSS dosyası */
+
+/* Google Fonts'tan Inter fontunu içe aktar */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    /* Body'nin esnek düzenini ayarlıyoruz ki içindeki kapsayıcı ortalansın */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ekranın tamamını kaplasın */
+    background: linear-gradient(to bottom right, #e0f2f7, #e8eaf6); /* Mavi tonlu arka plan */
+    color: #333; /* Genel metin rengi */
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh; /* Bu satır, eğer body'e flex vermeseydik işe yarardı, şimdi opsiyonel */
+    padding: 20px;
+    width: 100%; /* Mobil uyumluluk için */
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.content-card {
+    background-color: #fff;
+    border-radius: 24px; /* rounded-3xl */
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05); /* shadow-2xl */
+    padding: 24px 32px; /* p-6 sm:p-8 */
+    max-width: 480px; /* max-w-md */
+    width: 100%;
+    box-sizing: border-box; /* padding'in genişliğe dahil olmasını sağlar */
+    display: flex;
+    flex-direction: column;
+    gap: 24px; /* space-y-6 */
+    transition: all 0.3s ease-in-out; /* transform transition-all duration-300 */
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.content-card:hover {
+    transform: scale(1.03); /* hover:scale-105 */
 }
 
-.App-link {
-  color: #61dafb;
+.main-title {
+    font-size: 3rem; /* text-4xl */
+    font-weight: 800; /* font-extrabold */
+    color: #1a4f8a; /* text-blue-800 */
+    margin-bottom: 24px; /* mb-6 */
+    text-align: center;
+    letter-spacing: -0.025em; /* tracking-tight */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-.sorugetir{
-  margin-bottom: 20px;
-  margin-top: 20px;
-  padding-left: 20px;
-  padding-right: 20px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  background-color: black;
-  border: none;
-  font-size: larger;
-  color:white;
-
+@media (min-width: 640px) { /* sm:breakpoint */
+    .main-title {
+        font-size: 3.75rem; /* sm:text-5xl */
+    }
+    .content-card {
+        padding: 32px; /* sm:p-8 */
+    }
 }
 
-.sorugetir:hover{
-  border: solid;
-  transition: 0.3s;
-  border-width: 1px;
-  color:white;
+
+.skip-day-message {
+    background-color: #ffebee; /* bg-red-50 */
+    border: 1px solid #ef9a9a; /* border-red-200 */
+    color: #c62828; /* text-red-700 */
+    font-weight: 600; /* font-semibold */
+    font-size: 1.125rem; /* text-lg */
+    padding: 12px 20px; /* py-3 px-5 */
+    border-radius: 12px; /* rounded-xl */
+    text-align: center;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -2px rgba(0, 0, 0, 0.06); /* shadow-md */
 }
 
-.inpot{
-  width: 300px;
-  height: 30px;
-  border-radius: 7px;
-  border: none;
+.skip-day-message strong {
+    font-weight: 700; /* font-bold */
 }
 
-.onayla{
-  width: 100px;
-  height: 30px;
-  border-radius: 7px;
-  border: none;
-  background-color: black;
-  color: white;
+.today-person-box {
+    background-color: #e3f2fd; /* bg-blue-50 */
+    border: 1px solid #bbdefb; /* border-blue-200 */
+    margin-bottom: 24px; /* mb-6 */
+    padding: 20px; /* p-5 */
+    border-radius: 16px; /* rounded-2xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    transition: all 0.2s ease-in-out; /* transform transition-all duration-200 */
 }
 
-.onayla:hover{
-  border: solid;
-  transition: 0.3s;
-  border-width: 1px;
+.today-person-box:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05); /* hover:shadow-xl */
 }
 
-.inpot:hover{
-  border: solid;
-  transition: 0.3s;
-  border-width: 1px;
+.today-person-box p:first-child {
+    font-size: 2rem; /* text-3xl */
+    font-weight: 700; /* font-bold */
+    color: #1a237e; /* text-blue-900 */
+    margin-bottom: 8px; /* mb-2 */
 }
 
-.ona{
-  margin-top: 20px;
-  margin-bottom: 20px;
-  margin-left: 15px;
-  padding-left: 20px;
-  padding-right: 40px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  border-radius: 10px;
-  background-color: black;
-  border: none;
-  font-size: larger;
-  color:white;
+@media (min-width: 640px) {
+    .today-person-box p:first-child {
+        font-size: 2.25rem; /* sm:text-4xl */
+    }
 }
 
-.ona:hover{
-  border: solid;
-  transition: 0.3s;
-  border-width: 1px;
+.today-person-box strong {
+    color: #1976d2; /* text-blue-700 */
+}
+
+.today-person-box p:last-child {
+    color: #555; /* text-gray-600 */
+    font-size: 1rem; /* text-base */
+}
+
+@media (min-width: 640px) {
+    .today-person-box p:last-child {
+        font-size: 1.125rem; /* sm:text-lg */
+    }
+}
+
+
+.next-person-box {
+    background-color: #eef1f8; /* bg-blue-100 */
+    border: 1px solid #90caf9; /* border-blue-300 */
+    margin-bottom: 32px; /* mb-8 */
+    padding: 20px; /* p-5 */
+    border-radius: 16px; /* rounded-2xl */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+    transition: all 0.2s ease-in-out; /* transform transition-all duration-200 */
+}
+
+.next-person-box:hover {
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.05); /* hover:shadow-xl */
+}
+
+.next-person-box p:first-child {
+    font-size: 1.5rem; /* text-2xl */
+    color: #1565c0; /* text-blue-800 */
+    margin-bottom: 8px; /* mb-2 */
+}
+
+@media (min-width: 640px) {
+    .next-person-box p:first-child {
+        font-size: 1.875rem; /* sm:text-3xl */
+    }
+}
+
+.next-person-box span {
+    font-weight: 600; /* font-semibold */
+    color: #2196f3; /* text-blue-600 */
+}
+
+.next-person-box p:last-child {
+    color: #777; /* text-gray-500 */
+    font-size: 1rem; /* text-base */
+}
+
+@media (min-width: 640px) {
+    .next-person-box p:last-child {
+        font-size: 1.125rem; /* sm:text-lg */
+    }
+}
+
+.list-title {
+    font-size: 1.5rem; /* text-2xl */
+    font-weight: 700; /* font-bold */
+    color: #1976d2; /* text-blue-700 */
+    margin-bottom: 16px; /* mb-4 */
+    text-align: center;
+    border-bottom: 2px solid #90caf9; /* border-b-2 border-blue-300 */
+    padding-bottom: 8px; /* pb-2 */
+}
+
+@media (min-width: 640px) {
+    .list-title {
+        font-size: 1.875rem; /* sm:text-3xl */
+    }
+}
+
+.people-list {
+    background-color: #e3f2fd; /* bg-blue-50 */
+    padding: 20px; /* p-5 */
+    border-radius: 16px; /* rounded-2xl */
+    box-shadow: inset 0 2px 4px 0 rgba(0, 0, 0, 0.06); /* shadow-inner */
+    text-align: left;
+    list-style: none; /* Liste işaretçilerini kaldır */
+    margin: 0;
+}
+
+.people-list li {
+    color: #444; /* text-gray-700 */
+    font-size: 1.125rem; /* text-lg */
+    display: flex;
+    align-items: center;
+    margin-bottom: 12px; /* space-y-3 gibi */
+}
+
+.people-list li:last-child {
+    margin-bottom: 0; /* Son elemanın altında boşluk olmasın */
+}
+
+
+@media (min-width: 640px) {
+    .people-list li {
+        font-size: 1.25rem; /* sm:text-xl */
+    }
+}
+
+.people-list li span:first-child { /* Sıra numarasını temsil eden span */
+    font-weight: 700; /* font-bold */
+    color: #2196f3; /* text-blue-600 */
+    margin-right: 8px; /* mr-2 */
+}
+
+.checkmark {
+    margin-left: 8px; /* ml-2 */
+    color: #4caf50; /* text-green-500 */
+    font-size: 1.25rem; /* text-xl */
 }
