@@ -4,13 +4,13 @@ import "./App.css"; // Bu satırı ekledik!
 const people = [
   "Muhammed",
   "Bedirhan",
-  "Taha",
+  "Ali Taha",
   "Mehmet",
-  "S.mehmet",
+  "Sarı Mehmet",
   "Caner",
-  "M.İsa",
-  "Ercan abi",
-  "Mustafa abi",
+  "Muhammet İsa",
+  "Ercan",
+  "Mustafa",
 ];
 
 const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
