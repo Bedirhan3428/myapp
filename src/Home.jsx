@@ -16,7 +16,7 @@ const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
 
 /**
  * Belirli bir başlangıç tarihinden bugüne kadar atlanmayan gün sayısını hesaplar
- * ve bu sayının kişi listesi uzunluğuna göre modunu alarak geçerli kişi indeksini döndürür.
+ * ve bu sayının kişi lihstesi uzunluğuna göre modunu alarak geçerli kişi indeksini döndürür.
  * Bu, sıranın hangi kişide olduğunu belirler.
  * @returns {number} Geçerli gün için kişi listesindeki indeks.
  */
