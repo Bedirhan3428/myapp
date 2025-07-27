@@ -95,7 +95,8 @@ function App() {
         {/* Atlanacak gün mesajı */}
         {isSkipDay ? (
           <div className="skip-day-message"> {/* Class adı güncellendi */}
-            Bugün (<span className="font-bold">{formatDate(today)}</span>) sıra yok. ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯
+            Bugün (<span className="font-bold">{formatDate(today)}</span>) sıra yok. </hr>
+¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯
           </div>
         ) : (
           // Bugünkü kişi bilgisi
