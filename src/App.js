@@ -2,8 +2,8 @@ import React from "react";
 import "./App.css"; // Bu satırı ekledik!
 
 const people = [
-  "Sarı Mehmet",
-  "Caner",
+  "Mehmet Enes",
+  "Adil Caner",
   "Muhammet İsa",
   "Ercan",
   "Mustafa", 
@@ -95,7 +95,7 @@ function App() {
         {/* Atlanacak gün mesajı */}
         {isSkipDay ? (
           <div className="skip-day-message"> {/* Class adı güncellendi */}
-            Bugün (<span className="font-bold">{formatDate(today)}</span>) sıra yok.
+            Bugün (<span className="font-bold">{formatDate(today)}</span>) sıra yok. ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯
           </div>
         ) : (
           // Bugünkü kişi bilgisi
@@ -119,7 +119,7 @@ function App() {
 
         {/* Tüm sıra listesi başlığı */}
         <h2 className="list-title"> {/* Class adı güncellendi */}
-          Tüm Sıra:
+          Tüm Sıra
         </h2>
         {/* Tüm sıra listesi */}
         <ul className="people-list"> {/* Class adı güncellendi */}
