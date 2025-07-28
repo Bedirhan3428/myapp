@@ -89,7 +89,7 @@ function App() {
       <div className="content-card"> {/* Class adı güncellendi */}
         {/* Başlık */}
         <h1 className="main-title"> {/* Class adı güncellendi */}
-          Kola Sırası
+          Kola Sırası ☜⁠ ⁠(⁠↼⁠_⁠↼⁠)
         </h1>
 
         {/* Atlanacak gün mesajı */}
@@ -112,7 +112,7 @@ function App() {
         {!isSkipDay && (
           <div className="next-person-box"> {/* Class adı güncellendi */}
             <p>
-              Yarınki kişi: <span>{nextPerson}</span>
+              Yarınki kişi (⁠　⁠･⁠ω⁠･⁠)⁠☞ <span>{nextPerson}</span>
             </p>
             <p>({formatDate(nextDate)})</p>
           </div>
