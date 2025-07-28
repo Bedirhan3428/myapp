@@ -2,13 +2,13 @@ import React from "react";
 import "./App.css"; // Bu satırı ekledik!
 
 const people = [
-  "Muhammed",
+  "Muhammed(Syria)",
   "Bedirhan",
-  "Taha",
+  "Ali Taha",
   "Mehmet",
-  "S.mehmet",
-  "Caner",
-  "M.İsa",
+  "Mehmet Enes",
+  "Adil Caner",
+  "Muhammet İsa(Syria)",
   "Ercan abi",
   "Mustafa abi",
 ];
@@ -96,7 +96,7 @@ function App() {
         {/* Atlanacak gün mesajı */}
         {isSkipDay ? (
           <div className="skip-day-message"> {/* Class adı güncellendi */}
-            Bugün (<span className="font-bold">{formatDate(today)}</span>) sıra yok.
+            Bugün (<span className="font-bold">{formatDate(today)}</span>) sıra yok. ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯
           </div>
         ) : (
           // Bugünkü kişi bilgisi
