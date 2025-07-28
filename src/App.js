@@ -24,7 +24,7 @@ const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
 function getValidDayIndex() {
   // Başlangıç tarihini 2024-01-11 olarak güncelledik.
   // Bu tarih, 29 Temmuz 2025'te S.mehmet'in sırasının gelmesini sağlayacak şekilde ayarlandı.
-  const startDate = new Date("2024-01-1");
+  const startDate = new Date("2024-01-01");
   const today = new Date(); // Bugünün tarihi
 
   let count = 0; // Geçerli gün sayacı
