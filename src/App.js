@@ -89,7 +89,7 @@ function App() {
       <div className="content-card"> {/* Class adı güncellendi */}
         {/* Başlık */}
         <h1 className="main-title"> {/* Class adı güncellendi */}
-          Kola Sırası ☜⁠ ⁠(⁠↼⁠_⁠↼⁠)
+          Kola Sırası
         </h1>
 
         {/* Atlanacak gün mesajı */}
