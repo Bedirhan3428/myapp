@@ -22,7 +22,7 @@ const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
  * @returns {number} Geçerli gün için kişi listesindeki indeks.
  */
 function getValidDayIndex() {
-  const startDate = new Date("2024-01-01"); // Sıranın başlangıç tarihi
+  const startDate = new Date("2024-01-02"); // Sıranın başlangıç tarihi
   const today = new Date(); // Bugünün tarihi
 
   let count = 0; // Geçerli gün sayacı
