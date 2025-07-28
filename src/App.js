@@ -17,7 +17,7 @@ const skipDays = [0, 1]; // Pazar ve Pazartesi günleri atlanır
 
 // Sıra Mehmet Enes'ten başlasın diye offset'li doğru sıra hesaplama
 function getValidDayIndex() {
-  const startDate = new Date("2024-01-01");
+  const startDate = new Date("2024-01-02");
   const today = new Date();
   let count = 0;
   let date = new Date(startDate);
