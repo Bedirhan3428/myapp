@@ -21,7 +21,6 @@ const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
 function getValidDayIndex() {
   const startDate = new Date("2024-01-01");
   const today = new Date();
-
   let count = 0;
   let date = new Date(startDate);
 
@@ -33,8 +32,10 @@ function getValidDayIndex() {
     date.setDate(date.getDate() + 1);
   }
 
-  // Mehmet Enes ilk kişi, 1 Ocak 2024'te o başlasın diye offset 0
-  const offset = 0;
+  // Mehmet Enes sıranın ilk kişisi olacak şekilde offset uygula
+  const firstPersonIndex = people.indexOf("Mehmet Enes");
+  const offset = (people.length - firstPersonIndex) % people.length;
+
   return (count + offset) % people.length;
 }
 
