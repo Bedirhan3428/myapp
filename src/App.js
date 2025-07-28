@@ -23,23 +23,21 @@ const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
  * @returns {number} Geçerli gün için kişi listesindeki indeks.
  */
 function getValidDayIndex() {
-  const startDate = new Date("2024-01-01"); // Sıranın başlangıç tarihi
-  const today = new Date(); // Bugünün tarihi
+  const startDate = new Date("2024-01-01");
+  const today = new Date();
+  let count = 0;
+  let date = new Date(startDate);
 
-  let count = 0; // Geçerli gün sayacı
-  let date = new Date(startDate); // Başlangıç tarihinden itibaren döngü için kullanılacak tarih
-
-  // Başlangıç tarihinden bugüne kadar olan her günü kontrol et
   while (date < today) {
-    const day = date.getDay(); // Günün haftanın kaçıncı günü olduğunu al (0=Pazar, 1=Pazartesi, ...)
+    const day = date.getDay();
     if (!skipDays.includes(day)) {
-      // Eğer gün atlanacak günler arasında değilse sayacı artır
       count++;
     }
-    date.setDate(date.getDate() + 1); // Bir sonraki güne geç
+    date.setDate(date.getDate() + 1);
   }
 
-  return count % people.length; // Toplam geçerli gün sayısının kişi listesi uzunluğuna göre modunu al
+  const offset = 0; // Eğer 1 Ocak 2024'te Mehmet Enes başlıyorsa bu 0 olmalı.
+  return (count + offset) % people.length;
 }
 
 /**
