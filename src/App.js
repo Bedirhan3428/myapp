@@ -2,15 +2,15 @@ import React from "react";
 import "./App.css"; // Bu satırı ekledik!
 
 const people = [
-  "Muhammed",
-  "Bedirhan",
-  "Taha",
-  "Mehmet",
-  "S.mehmet",
+  "S.mehmet", // Sıra S.mehmet'ten başlıyor
   "Caner",
   "M.İsa",
   "Ercan abi",
   "Mustafa abi",
+  "Muhammed",
+  "Bedirhan",
+  "Taha",
+  "Mehmet",
 ];
 
 const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
@@ -22,7 +22,7 @@ const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
  * @returns {number} Geçerli gün için kişi listesindeki indeks.
  */
 function getValidDayIndex() {
-  const startDate = new Date("2024-01-02"); // Sıranın başlangıç tarihi
+  const startDate = new Date("2024-01-01"); // Sıranın başlangıç tarihi
   const today = new Date(); // Bugünün tarihi
 
   let count = 0; // Geçerli gün sayacı
