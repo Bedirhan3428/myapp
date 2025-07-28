@@ -60,7 +60,7 @@ body {
 @media (min-width: 640px) { /* sm:breakpoint */
     .main-title {
         font-size: 3.75rem; /* sm:text-5xl */
-        font-family: 'Bebas Neue', sans-serif;
+        font-family: 'Playfair Display', serif;
     }
     .content-card {
         padding: 32px; /* sm:p-8 */
