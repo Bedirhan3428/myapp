@@ -120,7 +120,7 @@ function App() {
 
         {/* Tüm sıra listesi başlığı */}
         <h2 className="list-title"> {/* Class adı güncellendi */}
-          Tüm Sıra:
+          Tüm Sıra
         </h2>
         {/* Tüm sıra listesi */}
         <ul className="people-list"> {/* Class adı güncellendi */}
