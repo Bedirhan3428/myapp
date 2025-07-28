@@ -54,6 +54,7 @@ body {
     margin-bottom: 24px; /* mb-6 */
     text-align: center;
     letter-spacing: -0.025em; /* tracking-tight */
+    font-family: 'Bebas Neue', sans-serif;
 }
 
 @media (min-width: 640px) { /* sm:breakpoint */
