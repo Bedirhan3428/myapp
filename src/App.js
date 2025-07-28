@@ -4,10 +4,10 @@ import "./App.css"; // Bu satırı ekledik!
 const people = [
   "Mehmet Enes",
   "Adil Caner",
-  "Muhammet İsa",
+  "Muhammet İsa(Syria)",
   "Ercan",
   "Mustafa", 
-  "Muhammed",
+  "Muhammed(Syria)",
   "Bedirhan",
   "Ali Taha",
   "Mehmet",
