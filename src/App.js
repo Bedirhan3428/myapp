@@ -98,7 +98,7 @@ function App() {
           </div>
         )}
 
-        <h2 className="list-title">Tüm Sıra:</h2>
+        <h2 className="list-title">Tüm Sıra</h2>
         <ul className="people-list">
           {people.map((person, index) => (
             <li key={index}>
