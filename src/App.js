@@ -113,7 +113,7 @@ function App() {
         </ul>
       </div>
 </br>
-<img src="https://i.hizliresim.com/9h76iaz.jpg" alt="Şermut Taha" width="300" />
+<img src="https://i.hizliresim.com/9h76iaz.jpg" alt="Şermut Taha" width="300" className="resim" />
     </div>
   );
 }
