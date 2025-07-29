@@ -112,6 +112,7 @@ function App() {
           ))}
         </ul>
       </div>
+<img src="https://i.hizliresim.com/9h76iaz.jpg" alt="Şermut Taha" width="300" />
     </div>
   );
 }
