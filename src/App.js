@@ -2,7 +2,7 @@ import React from "react";
 import "./App.css"; // Bu satırı ekledik!
 
 const people = [
-  "Mehmet Enes",
+    "Mehmet Enes",
   "Adil Caner",
   "Muhammet İsa(Syria)",
   "Ercan abi",
@@ -11,7 +11,6 @@ const people = [
   "Bedirhan",
   "Ali Taha",
   "Mehmet",
-  
 ];
 
 const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
@@ -23,9 +22,7 @@ const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
  * @returns {number} Geçerli gün için kişi listesindeki indeks.
  */
 function getValidDayIndex() {
-  // Başlangıç tarihini 2024-01-11 olarak güncelledik.
-  // Bu tarih, 29 Temmuz 2025'te S.mehmet'in sırasının gelmesini sağlayacak şekilde ayarlandı.
-  const startDate = new Date("2025-01-03");
+  const startDate = new Date("2024-01-01"); // Sıranın başlangıç tarihi
   const today = new Date(); // Bugünün tarihi
 
   let count = 0; // Geçerli gün sayacı
@@ -97,7 +94,7 @@ function App() {
         {/* Atlanacak gün mesajı */}
         {isSkipDay ? (
           <div className="skip-day-message"> {/* Class adı güncellendi */}
-            Bugün (<span className="font-bold">{formatDate(today)}</span>) sıra yok. ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯
+            Bugün (<span className="font-bold">{formatDate(today)}</span>) sıra yok.
           </div>
         ) : (
           // Bugünkü kişi bilgisi
@@ -121,7 +118,7 @@ function App() {
 
         {/* Tüm sıra listesi başlığı */}
         <h2 className="list-title"> {/* Class adı güncellendi */}
-          Tüm Sıra
+          Tüm Sıra:
         </h2>
         {/* Tüm sıra listesi */}
         <ul className="people-list"> {/* Class adı güncellendi */}
