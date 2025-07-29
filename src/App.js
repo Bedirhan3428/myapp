@@ -20,7 +20,7 @@ const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
  * ve bu sayının kişi listesi uzunluğuna göre modunu alarak geçerli kişi indeksini döndürür.
  */
 function getValidDayIndex() {
-  const startDate = new Date("2025-07-16"); // Mehmet Enes'ten başlayacak şekilde ayarlandı
+  const startDate = new Date("2025-07-15"); // Mehmet Enes'ten başlayacak şekilde ayarlandı
   const today = new Date();
 
   let count = 0;
