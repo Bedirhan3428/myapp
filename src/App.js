@@ -2,15 +2,16 @@ import React from "react";
 import "./App.css"; // Bu satırı ekledik!
 
 const people = [
-  "Muhammed(Syria)",
-  "Bedirhan",
-  "Ali Taha",
-  "Mehmet",
   "Mehmet Enes",
   "Adil Caner",
   "Muhammet İsa(Syria)",
   "Ercan abi",
   "Mustafa abi",
+  "Muhammed(Syria)",
+  "Bedirhan",
+  "Ali Taha",
+  "Mehmet",
+  
 ];
 
 const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
