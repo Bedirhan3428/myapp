@@ -226,3 +226,10 @@ body {
     color: #4caf50; /* text-green-500 */
     font-size: 1.25rem; /* text-xl */
 }
+
+.resim {
+  border: 8px double gold;
+  padding: 10px;
+  background-color: #fffbe6;
+  border-radius: 6px;
+}
