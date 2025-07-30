@@ -112,8 +112,7 @@ function App() {
           ))}
         </ul>
       </div>
-<img src="https://i.hizlirm.com/.jpg" alt="Açıklama" width="300" className="resim"/>
-
+<p className="resim">power by BİMER</p>
 
     </div>
   );
