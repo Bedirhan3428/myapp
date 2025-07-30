@@ -112,6 +112,7 @@ function App() {
           ))}
         </ul>
       </div>
+<img src="https://i.hizliresim.com/9h76iaz.jpg" alt="Açıklama" width="300" className="resim"/>
 
 
     </div>
