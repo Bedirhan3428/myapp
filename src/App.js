@@ -15,6 +15,8 @@ const people = [
 
 const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
 
+const bakim = false;
+
 /**
  * Belirli bir başlangıç tarihinden bugüne kadar atlanmayan gün sayısını hesaplar
  * ve bu sayının kişi listesi uzunluğuna göre modunu alarak geçerli kişi indeksini döndürür.
@@ -73,7 +75,7 @@ function App() {
 
   return (
     <div className="app-container">
-      <div className="content-card">
+      { bakim && <div className="content-card">
         <h1 className="main-title">Kola Sırası</h1>
 
         {isSkipDay ? (
@@ -111,7 +113,7 @@ function App() {
             </li>
           ))}
         </ul>
-      </div>
+      </div>}
 <p className="resim">power by BİMER</p>
 
     </div>
