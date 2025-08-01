@@ -74,7 +74,7 @@ function App() {
   const nextDate = getNextValidDate(today);
 
   return (
-    <div className="app-container">
+    <div className="app-container"><p> Ufak bir HATA ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯ </p>
       { bakim && <div className="content-card">
         <h1 className="main-title">Kola Sırası</h1>
 
