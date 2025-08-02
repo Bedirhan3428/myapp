@@ -228,9 +228,9 @@ body {
 }
 
 .resim {
-  border: 8px double gold;
+  border: 2px;
   padding: 10px;
-  background-color: #fffbe6;
+  background-color: black;
   border-radius: 6px;
-  margin-top: 24px;
+  margin-top: 12px;
 }
