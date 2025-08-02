@@ -114,7 +114,7 @@ function App() {
           ))}
         </ul>
       </div>}
-<p>version 1.1
+<p>version 1.1 </p>
 <p className="resim">power by BİMER</p>
 
 
