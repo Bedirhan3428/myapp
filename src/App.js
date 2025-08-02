@@ -15,7 +15,7 @@ const people = [
 
 const skipDays = [0, 1]; // 0 = Pazar, 1 = Pazartesi
 
-const bakim = false;
+const bakim = true;
 
 /**
  * Belirli bir başlangıç tarihinden bugüne kadar atlanmayan gün sayısını hesaplar
