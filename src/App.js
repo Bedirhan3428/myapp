@@ -76,7 +76,7 @@ function App() {
   return (
     <div className="app-container">
       { bakim && <div className="content-card">
-        <h1 className="main-title">Kola Sırası</h1>
+        <h1 className="main-title">Kim Alacak</h1>
 
         {isSkipDay ? (
           <div className="skip-day-message">
