@@ -74,7 +74,7 @@ function App() {
   const nextDate = getNextValidDate(today);
 
   return (
-    <div className="app-container"><p> Ufak bir HATA ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯ </p>
+    <div className="app-container">
       { bakim && <div className="content-card">
         <h1 className="main-title">Kola Sırası</h1>
 
@@ -114,7 +114,9 @@ function App() {
           ))}
         </ul>
       </div>}
+<p>version 1.1
 <p className="resim">power by BİMER</p>
+
 
     </div>
   );
