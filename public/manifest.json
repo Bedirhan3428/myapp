@@ -1,6 +1,6 @@
 {
-  "short_name": "Kola Sırası",
-  "name": "Kola sirasini belirleme uygulamasi",
+  "short_name": "Kim Alacak",
+  "name": "Kimin alacağını sen belirle.",
   "icons": [
     {
       "src": "favicon.ico",
