@@ -8,7 +8,7 @@ const people = [
   "Ercan",
   "Ökkeş",
   "Muhammed(Syria)",
-  "Bedirhan",
+  "Sarı Mehmet",
   "Ali Taha",
   "Mehmet",
 ];
